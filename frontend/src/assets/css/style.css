@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+*::selection {
+  background-color: #FF88BA;
+  color: #fff;
+}
+
+section {
+  margin: 50px 0;
+}
+
+img{
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.8rem;
+}
+
+.line {
+  height: 1px;
+  border-bottom: solid 1px #ddd;
+  margin: 40px 0;
+}
+
+.f-right{
+  float: right;
+}
+
+.text-group {
+  margin-bottom: 8vh;
+}
+
+.text-group > h3{
+  margin-bottom: 0.3rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#insta-profile{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #ddd;
+  margin-bottom: 1rem;
+  background-image: url('../img/shnye.jpg');
+  background-size: cover;
+}
+
+#insta-profile::before{
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url('../img/crown.png');
+  background-size: cover;
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#insta-profile::after{
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url('../img/shortcake.png');
+  background-size: cover;
+  position: absolute;
+  bottom: 2px;
+  right: -1rem;
+}
+
+.input-field {
+  outline: none;
+  padding: 10px;
+  border: 1px solid #FF88BA;
+  border-radius: 7px;
+  margin: 0.5rem 0;
+}
+
+.input-field:focus {
+  -webkit-box-shadow: 0px 0px 14px 6px rgba(255,136,186,0.13); 
+  box-shadow: 0px 0px 10px 6px rgba(255,136,186,0.13);
+  transition: box-shadow 1s;
+}
+
+.btn {
+  padding: 0.6rem;
+  border: 1px solid #FF88BA;
+  border-radius: 7px;
+}
+
+.btn:hover{
+  background-color: #FF88BA;  
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn-fill {
+  background-color: #FF88BA;  
+  color: #fff;
+}
+
+.btn-fill:hover{
+  background-color: #f073a7;  
+}
+
+.btn-pill{
+  padding: 1rem;
+  border-radius: 100px;
+  margin: 0.5rem 0;
+}
+
+button{
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* letter-box */
+
+.letter-box{
+  position: relative;
+  padding: 1rem;
+  border: 1px solid #FF88BA;
+  border-radius: 7px;
+  margin-bottom: 40px;
+}
+
+.letter-box:last-child {
+  margin-bottom: 0;
+}
+
+.letter-box:hover {
+  -webkit-box-shadow: 0px 0px 14px 6px rgba(255,136,186,0.13); 
+  box-shadow: 0px 0px 10px 6px rgba(255,136,186,0.13);
+  transition: box-shadow 1s;
+}
+
+.box-content {
+  word-break:break-all;
+  white-space: pre-line;
+  font-size: 0.9rem;
+}
+.btn-menu {
+  padding: 3px;
+  float: right;
+  padding: 0 0.3rem;
+  min-width: 13px;
+  min-height: 13px;
+  font-size: 0.8rem;
+}
+
+.btn-menu:hover{
+  background-color: #eee;
+  border-radius: 2px;
+}
+
+.letter-date{
+  color: #bbb;
+  font-size: 0.8rem;
+  margin-left: 13px;
+}
+
+.remove-content{
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remove-content > .input-field {
+  margin-right: 10px;
+}
+
+
+
+footer {
+  margin: 50px 0 100px 0;
+}
+
+
+
+/* 
+  section style
+*/
+
+#sec-main{
+  margin-top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+#sec-main > h1 {
+  font-size: 5.0rem;
+  font-weight: 900;
+}
+
+.mainEmoji{
+  position: absolute;
+  right: 5%;
+  min-width: 250px;
+  min-height: 250px;
+  width: 28vw;
+  height: 28vw;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+}
+a:visited{
+  color: #bbb;
+}
+a:hover{
+  background-color: #FF88BA;
+  color: #fff;
+  text-decoration: none;
+}
+
+#app {
+  position: relative;
+}
+
+.canvas{
+  z-index: -5;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+}
